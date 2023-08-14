@@ -87,5 +87,11 @@ public class DragDuplicatePaths : MonoBehaviour, IBeginDragHandler, IDragHandler
         imageToFade.color = targetColor;
         yield return new WaitForSeconds(0.25f);
         Destroy(gameObject);
+
+        if (PlayerPrefs.GetInt(MenuHandler.lvlNumber) == 0)
+        {
+            SetSequencingDirection.instance.ResetAllDirectionInList();
+            Debug.Log("Reset Sequence Level 1 => Sequencing Level");
+        }
     }
 }

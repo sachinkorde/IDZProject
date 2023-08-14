@@ -127,6 +127,8 @@ public class PencilMovement : MonoBehaviour
 
         if (currentLevel == 0)
         {
+            directionsList.AddRange(SetSequencingDirection.instance.directions);
+            directionsListForCompare.AddRange(SetSequencingDirection.instance.directions);
             yield return null;
         }
         else if (currentLevel == 1)

@@ -14348,6 +14348,7 @@ GameObject:
   - component: {fileID: 2066125052}
   - component: {fileID: 2066125054}
   - component: {fileID: 2066125051}
+  - component: {fileID: 2066125055}
   m_Layer: 5
   m_Name: PathPlacesForLevel1
   m_TagString: Untagged
@@ -14463,6 +14464,30 @@ MonoBehaviour:
   m_ChildScaleWidth: 1
   m_ChildScaleHeight: 1
   m_ReverseArrangement: 0
+--- !u!114 &2066125055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2066125047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09f528b3c856034a897b12f8175454c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  directions: 
+  placeHolder:
+  - {fileID: 31079057}
+  - {fileID: 2087412406}
+  - {fileID: 619560030}
+  - {fileID: 1718457995}
+  - {fileID: 171212630}
+  - {fileID: 888480893}
+  - {fileID: 1525338675}
+  - {fileID: 487727994}
+  - {fileID: 321690236}
+  - {fileID: 291836321}
 --- !u!1 &2085483739
 GameObject:
   m_ObjectHideFlags: 0

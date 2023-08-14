@@ -73,8 +73,9 @@ public class DragPath : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 
             if (PlayerPrefs.GetInt(MenuHandler.lvlNumber) == 0)
             {
-                pencilMovement.directionsList.Add(transform.GetComponent<PencilProperties>().pencilDirection);
-                pencilMovement.directionsListForCompare.Add(transform.GetComponent<PencilProperties>().pencilDirection);
+                SetSequencingDirection.instance.ResetAllDirectionInList();
+                //pencilMovement.directionsList.Add(transform.GetComponent<PencilProperties>().pencilDirection);
+                //pencilMovement.directionsListForCompare.Add(transform.GetComponent<PencilProperties>().pencilDirection);
                 Debug.Log("reached here for Level 1 => Sequencing Level");
             }
             else if (PlayerPrefs.GetInt(MenuHandler.lvlNumber) == 1)
