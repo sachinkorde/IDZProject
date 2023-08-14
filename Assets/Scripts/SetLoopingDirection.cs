@@ -39,9 +39,12 @@ public class SetLoopingDirection : MonoBehaviour
 
     public void IncrementDirectionInList()
     {
-        directions.Add(place.transform.GetChild(0).GetComponent<PencilProperties>().pencilDirection);
-        incrementCounter++;
-        incrementBtn.transform.GetChild(0).GetComponent<TMP_Text>().text = incrementCounter.ToString();
+        if (place.transform.childCount > 0)
+        {
+            directions.Add(place.transform.GetChild(0).GetComponent<PencilProperties>().pencilDirection);
+            incrementCounter++;
+            incrementBtn.transform.GetChild(0).GetComponent<TMP_Text>().text = incrementCounter.ToString();
+        }
     }
 
     public void ResetAllDirectionInList() 
