@@ -690,7 +690,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: IDZ Digital
+  m_text: Coding Game
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dead34ed43bf44228bbd12eab987867e, type: 2}
   m_sharedMaterial: {fileID: 7013339018391987928, guid: dead34ed43bf44228bbd12eab987867e, type: 2}
